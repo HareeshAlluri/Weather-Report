@@ -1,0 +1,607 @@
+
+@media (min-width: 1281px) {
+  
+  
+  
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+#bgImage{   
+    background-image: url("./assets/weatherBackImages/clear-day");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    
+    
+
+
+}
+.layout{
+    display: flex;
+
+}
+.leftSide{
+   
+    background-color: #d2d3d6;
+    opacity: 60%;
+    /* width: 20%; */
+    
+
+}
+
+.weatherIcon{
+    display: flex;
+    justify-content: center;
+}
+.weatherIcon img{
+    height: 120px;
+    width:130px
+}
+
+
+.temparatureDate{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.temparture p{
+    font-size: xx-large;
+    
+}
+
+.daytime p{
+    font-size: large;     
+}
+
+.line{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.cloud{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.precp{
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+
+.location{
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+    margin-top: 160vh;
+}
+.rightSide{
+    
+    background-color: #f6f6f8;
+    width: 90%;
+    
+}
+
+
+.heading ul{
+    display: flex;
+    gap: 10px;
+    padding: 20px 50px;
+    font-weight: bold;
+    list-style-type:none ;  
+
+    
+}
+.heading a{
+    text-decoration: none;
+    color: black;
+
+}   
+.heading span{
+    
+    background-color: rgb(249, 252, 247);
+    border-radius: 40%;
+    margin-left: 700px;
+    font-size: large;
+    cursor: pointer;
+    padding: 5px;
+      
+}
+.heading span:hover{
+background-color: black;
+color: white;
+}
+.heading pre{
+    
+    background-color: rgb(254, 251, 251);
+    border-radius: 40%;
+    font-size: larger;
+    cursor: pointer;
+    /* padding: 5px; */
+
+
+}
+.heading pre:hover{
+    background-color: black;
+    color: white;
+    }
+
+
+.dayCards{
+    display: grid;
+    
+    grid-template-columns: repeat(6 , 0fr);
+    
+    row-gap: 10px;
+    column-gap: 20px;
+    padding: 50px;
+}
+.dayCards section{
+    height: 100px;
+    width: 60px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.dayCards section img{
+    height: 80px;
+    width: 80px;
+    margin-left: -5px;
+    margin-top: 5px;
+   
+}
+/* .dayCards sectionheading{
+    color: grey;
+    opacity: 80%;
+    text-align: center;
+}
+
+.dayCards sectionpara{
+    text-align: center;
+    font-size: xx-large;
+    margin: 15px;
+} */
+
+
+.highlightCards{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    row-gap: 10px;
+    column-gap: 20px;
+    padding: 60px;
+}
+.highlightCards section{
+    height: 100px;
+    width: 200px;
+    padding: 60px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+}
+.highlights{
+    padding: 20px 40px;
+}
+.highlightHeading{
+    color: grey;
+    opacity: 60%;
+}
+
+.highlightPara{
+    text-align: center;
+    font-size: xx-large;
+    margin: 15px;
+}
+
+
+.searchBar{
+    display: flex;
+    padding: 30px 10px;
+}
+.searchBar input{
+    padding:10px 15px 10px 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    
+}
+.searchBar button{
+    padding: 10px;
+    background-color: rgb(29, 143, 243);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+}   
+
+@media (min-width: 320px) and (max-width: 480px){
+
+      
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+#bgImage{   
+    background-image: url("./assets/weatherBackImages/clear-day");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 100%;
+
+}
+.layout{
+    display: flex;
+    flex-direction: column;
+
+}
+.leftSide{
+   
+    background-color: #d2d3d6;
+    /* width: 20%; */
+    
+
+}
+.rightSide{
+    
+    background-color: #f6f6f8;
+    /* width: 80%; */
+    
+}
+
+
+.heading ul{
+    display: flex;
+    gap: 10px;
+    padding: 20px 50px;
+    font-weight: bold;
+    list-style-type:none ;
+
+    
+}
+.heading a{
+    text-decoration: none;
+    color: black;
+
+}   
+.heading span{
+    
+    background-color: rgb(254, 251, 251);
+    border-radius: 40%;
+    margin-left: 100px;
+    font-size: large;
+      
+}
+.heading pre{
+    
+    background-color: rgb(254, 251, 251);
+    border-radius: 40%;
+    font-size: larger;
+
+}
+
+
+.dayCards{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 0fr);
+    
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 40px;
+}
+.dayCards section{
+    height: 70px;
+    width: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.highlightCards{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    row-gap: 10px;
+    column-gap: 20px;
+    padding: 60px;
+}
+.highlightCards section{
+    height: 70px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+}
+.highlights{
+    padding: 20px 40px;
+}
+.searchBar{
+    display: flex;
+    padding: 30px 10px;
+}
+.searchBar input{
+    padding:10px 15px 10px 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    
+}
+.searchBar button{
+    padding: 10px;
+    background-color: rgb(29, 143, 243);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+}
+
+
+}
+
+@media (min-width: 481px) and (max-width: 1023px){
+
+      
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: sans-serif;
+    }
+    
+    #bgImage{   
+        background-image: url("./assets/weatherBackImages/clear-day");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        height: 100%;
+    
+    }
+    .layout{
+        display: flex;
+        /* flex-direction: column; */
+    
+    }
+    .leftSide{
+       
+        background-color: #d2d3d6;
+        /* width: 20%; */
+        
+        
+    
+    }
+    .rightSide{
+        
+        background-color: #f6f6f8;
+        /* width: 80%; */
+        
+    }
+    
+    
+    .heading ul{
+        display: flex;
+        gap: 10px;
+        padding: 20px 50px;
+        font-weight: bold;
+        list-style-type:none ;
+    
+        
+    }
+    .heading a{
+        text-decoration: none;
+        color: black;
+    
+    }   
+    .heading span{
+        
+        background-color: rgb(254, 251, 251);
+        border-radius: 40%;
+        margin-left: 200px;
+        font-size: large;
+          
+    }
+    .heading pre{
+        
+        background-color: rgb(254, 251, 251);
+        border-radius: 40%;
+        font-size: larger;
+
+
+    }
+    
+    
+    .dayCards{
+        display: grid;
+        
+        grid-template-columns: repeat(4, 0fr);
+        
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 40px;
+    }
+    .dayCards section{
+        height: 90px;
+        width: 80px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .highlightCards{
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        row-gap: 10px;
+        column-gap: 20px;
+        padding: 60px;
+    }
+    .highlightCards section{
+        height: 120px;
+        width: 160px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+    }
+    .highlights{
+        padding: 20px 40px;
+    }
+    .searchBar{
+        display: flex;
+        padding: 30px 10px;
+    }
+    .searchBar input{
+        padding:10px 15px 10px 10px;
+        border-radius: 5px 0px 0px 5px;
+        border: none;
+        
+    }
+    .searchBar button{
+        padding: 10px;
+        background-color: rgb(29, 143, 243);
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        color: white;
+    }
+    
+    
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px){
+
+      
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+        }
+        
+        #bgImage{   
+            background-image: url("./assets/weatherBackImages/clear-day");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px;
+            height: 100%;
+        
+        }
+        .layout{
+            display: flex;
+            /* flex-direction: column; */
+        
+        }
+        .leftSide{
+           
+            background-color: #d2d3d6;
+            /* width: 20%; */
+            
+            
+        
+        }
+        .rightSide{
+            
+            background-color: #f6f6f8;
+            /* width: 80%; */
+            
+        }
+        
+        
+        .heading ul{
+            display: flex;
+            gap: 10px;
+            padding: 20px 50px;
+            font-weight: bold;
+            list-style-type:none ;
+        
+            
+        }
+        .heading a{
+            text-decoration: none;
+            color: black;
+        
+        }   
+        .heading span{
+            
+            background-color: rgb(254, 251, 251);
+            border-radius: 40%;
+            margin-left: 500px;
+            font-size: large;
+              
+        }
+        .heading pre{
+            
+            background-color: rgb(254, 251, 251);
+            border-radius: 40%;
+            font-size: larger;
+    
+        }
+        
+        
+        .dayCards{
+            display: grid;
+            
+            grid-template-columns: repeat(5, 0fr);
+            row-gap: 10px;
+            column-gap: 10px;
+            padding: 40px;
+        }
+        .dayCards section{
+            height: 110px;
+            width: 90px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .highlightCards{
+            display: grid;
+            grid-template-columns: repeat(2, 0fr);
+            row-gap: 10px;
+            column-gap: 20px;
+            padding: 60px;
+        }
+        .highlightCards section{
+            height: 150px;
+            width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+        }
+        .highlights{
+            padding: 20px 40px;
+        }
+        .searchBar{
+            display: flex;
+            padding: 30px 10px;
+        }
+        .searchBar input{
+            padding:10px 15px 10px 10px;
+            border-radius: 5px 0px 0px 5px;
+            border: none;
+            
+        }
+        .searchBar button{
+            padding: 10px;
+            background-color: rgb(29, 143, 243);
+            border: none;
+            border-radius: 0px 5px 5px 0px;
+            color: white;
+        }
+        
+        
+        }
+
+
+
+
+
+
+
+
