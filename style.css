@@ -13,10 +13,8 @@
     background-image: url("./assets/weatherBackImages/clear-day");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
+    padding: 20px 50px;
     
-    
-
 
 }
 .layout{
@@ -25,7 +23,7 @@
 }
 .leftSide{
    
-    background-color: #d2d3d6;
+    background-color: #fafdff;
     opacity: 60%;
     /* width: 20%; */
     
@@ -143,12 +141,13 @@ color: white;
     padding: 50px;
 }
 .dayCards section{
-    height: 100px;
+    height: 90px;
     width: 60px;
     padding: 50px;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    font-weight: bold;
 }
 .dayCards section img{
     height: 80px;
@@ -172,7 +171,7 @@ color: white;
 
 .highlightCards{
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: repeat(3, 3fr);
     row-gap: 10px;
     column-gap: 20px;
     padding: 60px;
@@ -195,9 +194,10 @@ color: white;
 
 .highlightPara{
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
     margin: 15px;
 }
+
 
 
 .searchBar{
